@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: white;
+  /**@else {
+        background-color: $light-background;
+        color: $dark-text;
+      }**/
+}
+
+.header {
+  margin: 20px auto;
+  width: 80%;
+  font-weight: 700;
+}
+
+.main {
+  margin: 20px auto;
+  width: 80%;
+}
+.main p {
+  font-weight: 300;
+}
+
+.main2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 80%;
+}
+.main2 .main2_paragraphe1, .main2 .main2_paragraphe2 {
+  font-weight: wheight(meduim);
+}
+.main2 .main2_paragraphe1:hover, .main2 .main2_paragraphe2:hover {
+  color: pink;
+}
+.main2 .main2_paragraphe2:hover {
+  color: orange;
+}
+@media (max-width: 800px) {
+  .main2 {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

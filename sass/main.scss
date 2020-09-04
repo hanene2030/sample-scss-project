@@ -1,0 +1,47 @@
+@import './resets';
+@import './variables';
+@import './functions';
+@import './mixins';
+
+body{
+ @include theme(true);
+   
+}
+.header{
+    margin: $margin_text;
+    width: $width_percent;
+    font-weight: weight(bold );
+}
+.main{
+    margin: $margin_text;
+    width: $width_percent; 
+    //Nest
+    p {
+        font-weight: weight( regular );
+    }
+}
+.main2{
+@include flexCenter(row);
+    margin: $margin_text;
+    width: $width_percent; 
+    //Nest
+    #{&}_paragraphe1 {
+        font-weight: wheight(meduim );
+        &:hover{
+            color : pink;
+        }
+    }
+    //extend
+      //Nest
+      #{&}_paragraphe2 {
+        
+        @extend .main2_paragraphe1;
+        &:hover{
+            color : orange;
+        }
+    }
+    @include mobile{
+        flex-direction: column;
+    }
+}
+

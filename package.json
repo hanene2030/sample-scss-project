@@ -1,0 +1,11 @@
+{
+  "name": "sample-scss-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "scss": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Hanene",
+  "license": "ISC"
+}
